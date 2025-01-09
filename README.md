@@ -1,2 +1,1 @@
-
-# [Event-based Eye Tracking Challenge](https://EETChallenge.github.io/EET.github.io/) @ CVPR 2024 Workshop [AI for Streaming](https://ai4streaming-workshop.github.io/)
+# [Efficient Event-based Eye-Tracking (3ET) Challenge](https://lab-ics.github.io/3et-2025.github.io) @ CVPR 2025 Workshop [Event-based Vision](https://tub-rip.github.io/eventvision2025/)
