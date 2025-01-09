@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="AI for Streaming 2024 Event-based Eye Tracking Challenge">
+  <meta name="keywords" content="Event Camera, Eye tracking, Streaming">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Event-based Eye Tracking - CVPR 2024 Challenge</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./website/static/css/bulma.min.css">
+  <link rel="stylesheet" href="./website/static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./website/static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./website/static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./website/static/css/index.css">
+  <link rel="icon" href="./website/static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./website/static/js/fontawesome.all.min.js"></script>
+  <script src="./website/static/js/bulma-carousel.min.js"></script>
+  <script src="./website/static/js/bulma-slider.min.js"></script>
+  <script src="./website/static/js/index.js"></script>
+</head>
+<body>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Event-based Eye Tracking<br> <small> AI for Streaming CVPR 2024 Challenge</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://scholar.google.fr/citations?user=pdZLukIAAAAJ&hl=en&oi=en">Zuowen Wang</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://scholar.google.fr/citations?user=sQ9N7dsAAAAJ&hl=en">Chang Gao</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="https://scholar.google.fr/citations?user=3QSALjX498QC&hl=en">Zongwei Wu</a><sup>3</sup>,</span>
+            <span class="author-block">
+              <a href="https://scholar.google.fr/citations?user=XYkPvZUAAAAJ&hl=en&oi=en">Shih-Chii Liu</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://scholar.google.fr/citations?user=enuSO2YAAAAJ&hl=en&oi=en">Qinyu Chen</a><sup>1,4</sup>,</span>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+
+            <span class="author-block"><sup>1</sup>Sensors Group, Institute of Neuroinformatics, UZH/ETH Zurich,</span>
+            <span class="author-block"><sup>2</sup>EMI Lab,TU Delft,</span>
+            <span class="author-block"><sup>3</sup>Computer Vision Lab, University of Wurzburg,</span>
+            <span class="author-block"><sup>4</sup>LIACS, Leiden University</span>
+            <br>
+            <small>Presentation at CVPR <a rel="license" href="https://ai4streaming-workshop.github.io/">AI for Streaming Workshop</a></small>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- Challenge Link. -->
+              <span class="link-block">
+                <a href="https://www.kaggle.com/competitions/event-based-eye-tracking-ais2024"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Kaggle</span>
+                  </a>
+              </span>
+              
+              <!-- Github Link. -->
+              <span class="link-block">
+                <a href="https://github.com/EETChallenge/challenge_demo_code"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Github</span>
+                  </a>
+              </span>
+
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href="https://www.kaggle.com/competitions/event-based-eye-tracking-ais2024/data"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/pdf/2404.11770.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Challenge Report</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <!--<span class="link-block">
+                <a href="https://www.youtube.com"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              <!-- Code Link. -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<style>
+  .centered-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<section class="centered-content">
+  <img src="./figures/3et_demo_low_res.gif" width="480" alt="Event-based eye-tracking video game demo">
+  <div>
+    <p>Let's play some video games with event-based eye-tracking!</p>
+    <p>This video was filmed at the 2023 Telluride Neuromorphic Cognition Engineering Workshop, CO, US, by Qinyu Chen and Chang Gao.</p>
+  </div>
+</section>
+
+</body>
+</html>
+
+
+<script defer src="https://unpkg.com/img-comparison-slider@7/dist/index.js"></script>
+<link  rel="stylesheet"  href="https://unpkg.com/img-comparison-slider@7/dist/styles.css"/>
+
+<style>
+  .slider-example-split-line {
+    --divider-width: 4px;
+    --divider-color: #ffa658;
+    --default-handle-opacity: 0;
+  }
+</style>
+
+<style>
+  .before,
+  .after { margin: 0; }
+
+  .before figcaption,
+  .after figcaption {
+    background: #fff;
+    border: 1px solid #c0c0c0;
+    border-radius: 12px;
+    color: #2e3452;
+    opacity: 0.8;
+    padding: 12px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 100%;
+  }
+
+  .before figcaption {left: 12px;}
+  .after figcaption { right: 12px;}
+</style>
+
+<div class="columns is-centered"> 
+  
+</div>
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">About the Challenge</h2>
+        <div class="content has-text-justified">
+          <p>
+            Developing an event-based eye-tracking system presents significant opportunities in diverse fields, notably in consumer electronics and neuroscience. Human eyes exhibit rapid movements, occasionally surpassing speeds of 300°/s. This necessitates using <a rel="license" href="https://www.youtube.com/watch?v=6xOmo7Ikwzk&t=80s&ab_channel=Sony-Global">event cameras</a> capable of high-speed sampling and tracking.
+            <br>
+            <br>
+            In consumer electronics, particularly in augmented and virtual reality (AR/VR) applications, the primary benefits of event-based systems extend beyond their high speed. Their highly sparse input data streams can be exploited to reduce power consumption. This is a pivotal advantage in creating lighter, more efficient wearable headsets that offer prolonged usage and enhanced user comfort.
+            <br>
+            <br>
+            This is instrumental in augmenting the immersive experience in AR/VR and expanding the capabilities of portable technology. In neuroscience and cognitive studies, such technology is crucial for deciphering the complexities of eye movement. It facilitates a deeper comprehension of visual attention processes and aids in diagnosing and understanding neurological disorders.
+            <br>
+            <br>
+            This challenge aims to develop an **event-based eye-tracking system for precise tracking of rapid eye movements** to produce lighter and more comfortable devices for a better user experience. Simultaneously, it promises to provide novel insights into neuroscience and cognitive research, deepening our understanding of these domains.
+            <br>
+            <br>
+            The challenge will held with the <a rel="license" href="https://ai4streaming-workshop.github.io/">1st edition of AI for Streaming</a>
+            workshop, in conjunction with CVPR 2024.
+            <br>
+          </p>
+          <p>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+<section class="section" id="News">
+  <div class="container is-max-desktop content">
+    <h2 class="title">News</h2>
+    <p>
+      [16/03/2024] Challenge Ends! Thanks for your interest in our challenge!
+    <p>
+      [02/05/2024] Challenge Starts!
+    <p>
+      [01/29/2024] Release Website
+    </p>
+  </div>
+</section>
+
+<section class="section" id="News">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Contact</h2>
+    <p>
+      If you have technical questions on the challenge, please contact us at:
+      <br>
+      - Zuowen Wang (zuowen [at] ini [dot] uzh [dot] ch)
+      <br>
+      - Qinyu Chen (q.chen [at] liacs [dot] leidenuniv [dot] nl)
+      <br>
+      <br>
+      Winners will be invited, after being reviewed, to present during the associated CVPR workshop. 
+      <br>
+      Other top-ranked teams may be invited to a tentative report for documenting the challenge.
+      <br>
+      For more details, please contact <a rel="license" href="https://ai4streaming-workshop.github.io/">workshop</a> organizers.
+    </p>
+  </div>
+</section>
+
+<section class="section" id="News">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Program Committee Members (TBU):</h2>
+    <p>
+      Zuowen Wang, UZH/ETH Zurich
+      <br>
+      Chang Gao, TU Delft
+      <br>
+      Zongwei Wu, University of Wurzburg
+      <br>
+      Shih-Chii Liu, UZH/ETH Zurich
+      <br>
+      Qinyu Chen, UZH/ETH Zurich & Leiden University
+      <br>
+      <br>
+
+      Zhuyun Zhou, University of Burgundy
+      <br>
+      Remi Boutteau, University of Rouen Normandy
+      <br>
+      Dominique Ginhac, University of Burgundy
+      <br>
+      Fan Yang-Song, University of Burgundy
+      <br>
+      Guillaume Caron, CNRS-AIST JRL, IRL 3218 & UPJV
+      <br>
+      Menghan Hu, East China Normal University
+      <br>
+      Guohao Lan, TU Delft
+      <br>
+      Xucong Zhang, TU Delft
+      <br>
+      Zhuo Zou, Fudan University
+      <br>
+      Congyi Sun, Nanjing University
+      <br>
+      Shilin Fu, Dalian University of Technology
+      <br>
+      Zixiao Li, UZH/ETH Zurich 
+      <br>
+      Joachim Ott, UZH/ETH Zurich 
+      <br>
+    </p>
+  </div>
+</section>
+
+
+
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>
+      @inproceedings{chen20233et,
+      title={3et: Efficient event-based eye tracking using a change-based convlstm network},
+      author={Chen, Qinyu and Wang, Zuowen and Liu, Shih-Chii and Gao, Chang},
+      booktitle={2023 IEEE Biomedical Circuits and Systems Conference (BioCAS)},
+      pages={1--5},
+      year={2023},
+      organization={IEEE}
+    }
+
+      @inproceedings{wang2024ais_event, 
+      title={{E}vent-{B}ased {E}ye {T}racking. {AIS} 2024 {C}hallenge {S}urvey}, 
+      author={Zuowen Wang and Chang Gao and Zongwei Wu and Marcos V. Conde and Radu Timofte and Shih-Chii Liu and Qinyu Chen and others}, 
+      booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops}, 
+      year={2024}
+    }
+    </code></pre>
+  </div>
+
+  
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+        <div class="content">
+          <p>This website template is borrowed from <a rel="license" href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+        </div>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>

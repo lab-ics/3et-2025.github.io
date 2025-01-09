@@ -1,0 +1,7 @@
+testset
+submissions
+team_*
+outputs
+__pycache__
+internal
+data
